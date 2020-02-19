@@ -5,18 +5,6 @@
 import Foundation
 import Swift
 
-public enum DebitOrCreditCardBrand {
-    case americanExpress
-    case chinaUnionPay
-    case dinersClubInternational
-    case discover
-    case jcb
-    case masterCard
-    case visa
-    
-    case unknown
-}
-
 extension DebitOrCreditCardFormat {
     public struct Unknown: DebitOrCreditCardFormatProtocol {
         public let blocks: [Int] = [4]
