@@ -6,12 +6,16 @@ import Foundation
 import Swift
 import SwiftUI
 
-public enum IndianBank: String, CaseIterable, Codable, Hashable {
+public enum IndianBank: String, CaseIterable, Codable, Hashable, Identifiable {
     case axis
     case hdfc
     case icici
     case kotak
     case sbi
+    
+    public var id: String {
+        return rawValue
+    }
 }
 
 extension IndianBank {
