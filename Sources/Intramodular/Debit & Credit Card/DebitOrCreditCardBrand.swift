@@ -19,7 +19,7 @@ public enum DebitOrCreditCardBrand: String, CaseIterable, Codable, Hashable {
 }
 
 extension DebitOrCreditCardBrand {
-    public var logoImage: Image {
-        Image(rawValue.lowercased() + ".logo")
+    public var logoCircleFillImage: Image {
+        Image(rawValue.lowercased() + ".circle.fill")
     }
 }
