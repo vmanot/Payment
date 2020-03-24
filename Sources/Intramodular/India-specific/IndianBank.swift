@@ -19,6 +19,21 @@ extension IndianBank {
         Image(rawValue + ".logo.circle.fill")
     }
     
+    public var razorpayPaymentCode: String {
+        switch self {
+            case .axis:
+                return "UTIB"
+            case .hdfc:
+                return "HDFC"
+            case .icici:
+                return "3022"
+            case .kotak:
+                return "KKBK"
+            case .sbi:
+                return "SBIN"
+        }
+    }
+
     public var cashfreePaymentCode: String {
         switch self {
             case .axis:
