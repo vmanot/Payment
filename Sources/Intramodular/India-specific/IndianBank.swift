@@ -50,7 +50,7 @@ extension IndianBank {
     }
 }
 
-// MARK: - Protocol Implementations -
+// MARK: - Protocol Conformances -
 
 extension IndianBank: CustomStringConvertible {
     public var shortDescription: String {
